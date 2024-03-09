@@ -11,5 +11,4 @@ const pool = mysql
   .promise(); // asinxron
 
 
-
 export { pool };

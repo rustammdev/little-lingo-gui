@@ -14,6 +14,6 @@ async function checkUser(id: Number) {
 export { checkUser };
 
 /* Tekshiruv uchun
-    *   const check = await checkUser(Number(id));
-    *        if (!check === true) {}
-*/
+ *   const check = await checkUser(Number(id));
+ *        if (!check === true) {}
+ */
