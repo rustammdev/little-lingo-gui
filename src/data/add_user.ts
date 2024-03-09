@@ -12,10 +12,7 @@ async function addUserInfo(
     const info = `INSERT INTO user_info (id, full_name, nick_name, user_name) VALUES (${id}, '${fullName}', '${nickName}', '${link}')`;
     await pool.query(info);
 
-    // Ma'lumotlarni ko'rish
-    const userInfo = await pool.query("SELECT * FROM user_info");
-
-    console.log(userInfo[0]);
+    
   } catch (err) {
     console.error("Xatolik sodir bo'ldi:", err);
   } finally {
