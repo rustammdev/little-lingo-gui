@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.21.1",
+    "mysql2": "^3.9.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon -e ts -w src --exec ts-node src/index.ts"
+  }
+}
