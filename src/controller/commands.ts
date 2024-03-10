@@ -1,6 +1,4 @@
 import { Context } from "grammy";
-import { addUserInfo } from "../data/add_db";
-import { checkUser } from "../data/check_db";
 
 import { InlineKeyboard } from "grammy";
 const inlineKeyboardLevel = new InlineKeyboard()
@@ -15,27 +13,10 @@ const inlineKeyboardLevel = new InlineKeyboard()
   .row()
   .text("Proficiency (C2)", "C2");
 
-// Start
-export const startMessage = async (ctx: Context) => {
-  const id = ctx.from?.id;
-  const name = ctx.from?.last_name
-    ? `${ctx.from?.first_name} ${ctx.from?.last_name}`
-    : ctx.from?.first_name + "";
-
-  // Foydalanuvchi borlikka tekshiruv
-  const check = await checkUser(Number(id));
-
-  // Foydalanuvchi mavjud bo'lmasa db ga saqlash
-  if (!check === true) {
-    const link = ctx.from?.username
-      ? "@" + ctx.from.username
-      : "Mavjud emas" + "";
-
-    addUserInfo(id, name, name, link);
-  }
-
-  await ctx.reply(`Xush kelibsiz ${name}`);
-  await ctx.reply("Ayni vaqtdagi darajangizni belgilang", {
+const test = async (ctx: Context) => {
+  await ctx.reply("Start bosildi", {
     reply_markup: inlineKeyboardLevel,
   });
 };
+
+export { test };
