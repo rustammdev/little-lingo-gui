@@ -1,21 +1,32 @@
 import { Context } from "grammy";
+import { inlineKeyboardLevel } from "../keyboards/inline";
+import { startKeyboard } from "../keyboards/keyboard";
 
-import { InlineKeyboard } from "grammy";
-const inlineKeyboardLevel = new InlineKeyboard()
-  .text("Foundation (A1-pre)", "A1-pre")
-  .text("Elementary (A1)", "A1")
-  .row()
-  .text("Pre Intermediate (A2)", "A2")
-  .text("Intermediate (B1)", "B1")
-  .row()
-  .text("Upper Intermediate (B2)", "B2")
-  .text("Advanced (C1)", "C1")
-  .row()
-  .text("Proficiency (C2)", "C2");
+import { main } from "../data/users_controller";
+
 
 const test = async (ctx: Context) => {
-  await ctx.reply("Start bosildi", {
-    reply_markup: inlineKeyboardLevel,
+  const id = ctx.from?.id;
+  const name = ctx.from?.last_name
+    ? `${ctx.from?.first_name} ${ctx.from?.last_name}`
+    : ctx.from?.first_name + "";
+  const link = ctx.from?.username
+    ? "@" + ctx.from.username
+    : "Mavjud emas" + "";
+
+  const checkUser = await main(Number(id))
+
+  if (Array.isArray(checkUser) && checkUser.length === 0) {
+    console.log('The array is empty.')
+  }else {
+    console.log('The array is not empty or not an array.')
+  }
+
+
+  
+  
+  await ctx.reply("Ushbu tugmani bosih orqali shaxsiy kabinet yaratasiz", {
+    reply_markup: startKeyboard,
   });
 };
 
