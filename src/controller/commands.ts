@@ -1,9 +1,6 @@
 import { Context } from "grammy";
-import { inlineKeyboardLevel } from "../keyboards/inline";
 import { startKeyboard } from "../keyboards/keyboard";
-
-import { main } from "../data/users_controller";
-
+import { getUsers } from "../data/get-users";
 
 const test = async (ctx: Context) => {
   const id = ctx.from?.id;
@@ -14,17 +11,14 @@ const test = async (ctx: Context) => {
     ? "@" + ctx.from.username
     : "Mavjud emas" + "";
 
-  const checkUser = await main(Number(id))
-
-  if (Array.isArray(checkUser) && checkUser.length === 0) {
-    console.log('The array is empty.')
-  }else {
-    console.log('The array is not empty or not an array.')
+  const result = await getUsers(Number(id));
+  // console.log(result);
+  if (Array.isArray(result) && result.length != 0) {
+    console.log("User mavjud");
+  } else {
+    console.log("User mavjud emas");
   }
 
-
-  
-  
   await ctx.reply("Ushbu tugmani bosih orqali shaxsiy kabinet yaratasiz", {
     reply_markup: startKeyboard,
   });
