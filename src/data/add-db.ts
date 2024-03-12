@@ -14,7 +14,6 @@ const addUserDb = async (ctx: Context) => {
   const link = ctx.from?.username
     ? "@" + ctx.from.username
     : "Mavjud emas" + "";
-    console.log('add db ' + id);
     
 
   const userInfo = `INSERT INTO user_info (id, full_name, nick_name, user_name) VALUES (?, ?, ?, ?)`;
