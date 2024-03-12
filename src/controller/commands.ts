@@ -17,7 +17,6 @@ const start = async (ctx: Context) => {
 
     console.log(ctx.from?.id);
   }
-  // ctx.reply("Xush kelibsiz foydalanuvchi");
 };
 
 export { start };
