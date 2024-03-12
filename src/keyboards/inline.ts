@@ -20,9 +20,12 @@ export const startButton = new InlineKeyboard()
 
 export const startLessonMenu = new InlineKeyboard()
   .text("Mening statistikam", 'my-stats')
-  .text('Leader Board', 'leader-board')
+  .text("Top foydalanuvchilar", 'leader-board')
   .row()
-  .text("My dictionary", 'my-dict')
-  .text("My settings", 'setting')
+  .text("Mening lug'atlarim", 'my-dict')
+  .text("Sozlamalar", 'setting')
   .row()
-  .text("One Step Forward", 'one-step')
+  .text("Bugungi modullashgan mavzular", 'one-step')
+
+
+  
