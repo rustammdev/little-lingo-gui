@@ -11,7 +11,7 @@ const start = async (ctx: Context) => {
     console.log("ture");
 
     console.log(ctx.from);
-    addUserDb(ctx)
+    await addUserDb(ctx)
   } else {
     console.log("else");
 
