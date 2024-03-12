@@ -2,8 +2,8 @@ import { pool } from "./connect_db";
 import { Context } from "grammy";
 
 function uniqueIdGenerator(): number {
-    // Bu funksiya tasodifiy raqamni generatsiya qiladi
-    return Math.floor(Math.random() * 10000000000);
+  // Bu funksiya tasodifiy raqamni generatsiya qiladi
+  return Math.floor(Math.random() * 10000000000);
 }
 
 const addUserDb = (ctx: Context) => {
@@ -17,12 +17,9 @@ const addUserDb = (ctx: Context) => {
 
   console.log(id + " add db");
 
-  const info = `INSERT INTO user_info (id, full_name, nick_name, user_name) VALUES (${id}, '${name.replace(
-    /'/g,
-    "\\'"
-  )}', '${link}', '${link}')`;
+  const info = `INSERT INTO user_info (id, full_name, nick_name, user_name) VALUES (?, ?, ?, ?)`;
 
-  pool.query(info);
+  pool.query(info, [id, name.replace(/'/g, "\\'"), link, link]);
 };
 
 export { addUserDb };
