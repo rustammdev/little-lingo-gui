@@ -3,6 +3,6 @@ import { bot } from "../core/bot";
 import { InlineKeyboard } from "grammy";
 
 // controller
-import { test } from "./commands";
+import { start } from "./commands";
 
-bot.command("start", test);
+bot.command("start", start);
