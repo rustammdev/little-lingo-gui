@@ -34,3 +34,8 @@ export const games = new InlineKeyboard()
   .text("Flashcard", "card")
   .row()
   .text("Quiz", "quiz")
+
+
+export const reviewInlineKeyboard = new InlineKeyboard()
+  .text('<< Prev', "review-prev")
+  .text('Next >>', "review-next")
