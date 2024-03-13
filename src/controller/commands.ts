@@ -3,6 +3,7 @@ import { getUsers } from "../data/get-user";
 import { addUserDb } from "../data/add-db";
 import { inlineKeyboardLevel } from "../keyboards/inline";
 import { startLessonMenu } from "../keyboards/inline";
+import { mygamesKeyoards } from "../keyboards/keyboard";
 
 const start = async (ctx: Context) => {
   const id = ctx.from?.id;
@@ -25,9 +26,13 @@ const start = async (ctx: Context) => {
   }
 };
 
+// Oyinlar ro'yhati keyboard
+const mygames = async (ctx: Context) => {
+  await ctx.reply("O'yinni tanlang", { reply_markup: mygamesKeyoards });
+};
 
-const setting = async (ctx: Context) => {
-  
-}
+const reviewDictGame = async (ctx: Context) => {
+  console.log("review-dict");
+};
 
-export { start };
+export { start, mygames, reviewDictGame };
