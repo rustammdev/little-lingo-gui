@@ -11,18 +11,26 @@ export const inlineKeyboardLevel = new InlineKeyboard()
   .row()
   .text("Proficiency C2", "C2");
 
+// After English rank keyboar 
 export const startButton = new InlineKeyboard()
   .text("Darsni boshlash", "dars-start")
   .url("Yo'riqnoma", "https://www.google.com")
   .row()
   .text("Ortga qaytish", "back-to-level");
 
-
+// Default start list
 export const startLessonMenu = new InlineKeyboard()
-  .text("Mening statistikam", 'my-stats')
-  .text('Leader Board', 'leader-board')
+  .text("Mening statistikam", "my-stats")
+  .text("Top foydalanuvchilar", "leader-board")
   .row()
-  .text("My dictionary", 'my-dict')
-  .text("My settings", 'setting')
+  .text("Mening lug'atlarim", "my-dict")
+  .text("Sozlamalar", "setting")
   .row()
-  .text("One Step Forward", 'one-step')
+  .text("All games", "to-games");
+
+// Games list
+export const games = new InlineKeyboard()
+  .text("Review Dictionary", "review-dict")
+  .text("Flashcard", "card")
+  .row()
+  .text("Quiz", "quiz")
