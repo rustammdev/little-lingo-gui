@@ -1,8 +1,14 @@
 import { Keyboard } from "grammy";
+// json data
+const moduls = require("../content/moduls.json");
 
 export const mygamesKeyoards = new Keyboard()
-.text("Review Dictionary")
-.text("Flashcard")
-.row()
-.text("Quiz")
-.resized()
+  .resized()
+  .text("Review Dictionary")
+  .text("Flashcard")
+  .row()
+  .text("Quiz");
+
+
+
+  

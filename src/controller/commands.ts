@@ -4,6 +4,7 @@ import { addUserDb } from "../data/add-db";
 import { inlineKeyboardLevel } from "../keyboards/inline";
 import { startLessonMenu } from "../keyboards/inline";
 import { mygamesKeyoards } from "../keyboards/keyboard";
+import { ReviewDictionaryGame } from "../games/reviewdict";
 
 const start = async (ctx: Context) => {
   const id = ctx.from?.id;
@@ -32,7 +33,7 @@ const mygames = async (ctx: Context) => {
 };
 
 const reviewDictGame = async (ctx: Context) => {
-  console.log("review-dict");
+  ReviewDictionaryGame(ctx);
 };
 
 export { start, mygames, reviewDictGame };

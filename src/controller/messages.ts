@@ -13,6 +13,7 @@ import { mygames } from "./commands";
 
 // controller
 import { start } from "./commands";
+import { ReviewDictionaryGameContent } from "../games/reviewdict";
 
 bot.command("start", start);
 
@@ -37,15 +38,17 @@ bot.callbackQuery("dars-start", async (ctx) => {
   });
 });
 
-bot.callbackQuery(["A1-pre", "A1", "A2", "B1", "B1", "C1", "C2"], async (ctx) => {
-  const data = ctx.callbackQuery.data
-  const id = ctx.from.id;
-  updateData(data, id); // user english ranki yangilandi
-  await ctx.answerCallbackQuery();
-  await ctx.deleteMessage();
-  await ctx.reply("Darsni boshlamoqchimizis", { reply_markup: startButton });
- 
-});
+bot.callbackQuery(
+  ["A1-pre", "A1", "A2", "B1", "B1", "C1", "C2"],
+  async (ctx) => {
+    const data = ctx.callbackQuery.data;
+    const id = ctx.from.id;
+    updateData(data, id); // user english ranki yangilandi
+    await ctx.answerCallbackQuery();
+    await ctx.deleteMessage();
+    await ctx.reply("Darsni boshlamoqchimizis", { reply_markup: startButton });
+  }
+);
 
 // Inline o'yinlar ro'yxati
 bot.callbackQuery("to-games", async (ctx) => {
@@ -60,7 +63,14 @@ bot.command("mygames", mygames);
 
 // Review Dictionary game
 bot.hears("Review Dictionary", reviewDictGame);
+
 bot.callbackQuery("review-dict", async (ctx) => {
+  // inline
   ctx.answerCallbackQuery();
-  console.log("review");
+  reviewDictGame(ctx);
 });
+
+bot.hears(
+  ["Hello and goodby", "Family", "Jobs", "Basic verbs"],
+  ReviewDictionaryGameContent
+);

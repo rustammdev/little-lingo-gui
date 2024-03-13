@@ -1,0 +1,64 @@
+{
+  "Home Appliances and Devices": [
+    {
+      "id": 1,
+      "text": "alarm clock",
+      "definition": "ovoz chiqarish va kimnidir uyg'otish uchun aniq vaqtga sozlanishi mumkin bo'lgan soat"
+    },
+    {
+      "id": 2,
+      "text": "equipment",
+      "definition": "muayyan faoliyat yoki ishni bajarish uchun zarur bo'lgan narsalar, anjomlar"
+    },
+    {
+      "id": 3,
+      "text": "device",
+      "definition": "ma'lum bir maqsad uchun mo'ljallangan mashina yoki asbob, gadjetlar"
+    },
+    {
+      "id": 4,
+      "text": "loudspeaker",
+      "definition": "tovushlarni balandroq chiqaradigan, musiqa chalish uchun ishlatiladigan asbob "
+    },
+    {
+      "id": 5,
+      "text": "camera",
+      "definition": "suratga olish, filmlar yoki teledasturlar yaratish uchun qurilma yoki jihoz"
+    },
+    {
+      "id": 6,
+      "text": "dishwasher",
+      "definition": "idish-tovoq, qoshiq, stakan va hokazolarni tozalash uchun ishlatiladigan elektr mashinasi."
+    },
+    {
+      "id": 7,
+      "text": "line",
+      "definition": "telefon aloqasi yoki xizmati, aloqa simi"
+    },
+    {
+      "id": 8,
+      "text": "heater",
+      "definition": "joyni isitish yoki suv haroratini oshirish uchun issiqlik ishlab chiqaradigan uskuna"
+    },
+    {
+      "id": 9,
+      "text": "oven",
+      "definition": "Odatda pechning bir qismi bo'lgan, ovqat pishirish, pishirish yoki isitish uchun ishlatiladigan old eshikli quti shaklidagi uskuna"
+    },
+    {
+      "id": 10,
+      "text": "coffee maker",
+      "definition": "qahva tayyorlash uchun ishlatiladigan mashina"
+    },
+    {
+      "id": 11,
+      "text": "toaster oven",
+      "definition": "pech yoki tushdi mashinasi vazifasini bajaradigan kichik o'choq kabi ishlab chiqilgan elektr jihoz, mikravalnofka"
+    },
+    {
+      "id": 12,
+      "text": "air conditioner",
+      "definition": "xona, bino yoki transport vositasidagi havoni sovutish va quritish uchun mo'ljallangan mashina, konditsaner"
+    }
+  ]
+}

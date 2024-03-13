@@ -1,0 +1,250 @@
+{
+  "helloandgoodby": [
+    {
+      "id": 1,
+      "text": "hello",
+      "definition": "kimnidir ko'rganimizda va u bilan salomlashmoqchi bo'lganimizda yoki telefonda gaplasha boshlaganimizda aytadigan so'z"
+    },
+    {
+      "id": 2,
+      "text": "goodbye",
+      "definition": "biz ketayotganimizda yoki kimdir ketayotganda yoki telefon qo'ng'irog'i oxirida aytadigan so'z"
+    },
+    {
+      "id": 3,
+      "text": "hi",
+      "definition": "Biz kimnidir ko'rganimizda va u bilan salomlashmoqchi bo'lganimizda aytadigan so'z "
+    },
+    {
+      "id": 4,
+      "text": "bye ",
+      "definition": "biz kimnidir tark etayotganimizda yoki u ketayotganda yoki telefon qo'ng'irog'i oxirida aytadigan so'z "
+    },
+    {
+      "id": 5,
+      "text": "good morning ",
+      "definition": "ertalab kimgadir salom bermoqchi yoki salom aytmoqchi bo'lganimizda aytadigan gapimiz "
+    },
+    {
+      "id": 6,
+      "text": "good afternoon ",
+      "definition": "tushdan keyin odam bilan salomlashmoqchi yoki xayrlashmoqchi bo'lganimizda aytadigan narsamiz"
+    },
+    {
+      "id": 7,
+      "text": "good evening ",
+      "definition": " kechqurun odam bilan salomlashmoqchi yoki xayrlashmoqchi bo'lganimizda aytadigan narsamiz"
+    },
+    {
+      "id": 8,
+      "text": " good night",
+      "definition": " kechasi yoki yotishdan oldin odam bilan xayrlashmoqchi bo'lganimizda aytadigan narsamiz"
+    },
+    {
+      "id": 9,
+      "text": " thank you",
+      "definition": " kimgadir biz uchun qilgan yoki bizga bergan biror narsasi uchun minnatdor ekanligimizni ko'rsatish uchun aytadigan narsamiz"
+    },
+    {
+      "id": 10,
+      "text": "thanks ",
+      "definition": " kimdir bizga yordam berganida yoki biz uchun yaxshilik qilganida aytiladi"
+    },
+    {
+      "id": 11,
+      "text": " please",
+      "definition": " Biz xushmuomalalik bilan biror narsani so'ramoqchi bo'lganimizda yoki odamdan biror narsa qilishni xushmuomalalik bilan aytmoqchi bo'lganimizda ishlatiladi"
+    },
+    {
+      "id": 12,
+      "text": " OK",
+      "definition": " biror narsa qilishga rozi ekanligimizni yoki biror narsaga rozi ekanligimizni ko'rsatish uchun aytilgan"
+    }
+  ],
+  "family": [
+    {
+      "id": 1,
+      "text": "parent",
+      "definition": "Odam yoki hayvonning onasi yoki otasi"
+    },
+    {
+      "id": 2,
+      "text": " father",
+      "definition": "Bolaning erkak otasi"
+    },
+    {
+      "id": 3,
+      "text": "mother",
+      "definition": "Bolaning onasi"
+    },
+    {
+      "id": 4,
+      "text": "dad",
+      "definition": "otamizga chaqirishni norasmiy usuli"
+    },
+    {
+      "id": 5,
+      "text": "mom",
+      "definition": "bola tug'gan ayol yoki bolaga g'amxo'rlik qiluvchi va tarbiyalovchi kishi"
+    },
+    {
+      "id": 6,
+      "text": "wife",
+      "definition": "siz rasman turmush qurgan ayol"
+    },
+    {
+      "id": 7,
+      "text": "husband",
+      "definition": "siz rasman turmush qurgan odam"
+    },
+    {
+      "id": 8,
+      "text": "child",
+      "definition": "har qanday yoshdagi o'g'il yoki qiz"
+    },
+    {
+      "id": 9,
+      "text": "son",
+      "definition": "odamning erkak farzandi"
+    },
+    {
+      "id": 10,
+      "text": "daughter",
+      "definition": "odamning qiz bolasi"
+    },
+    {
+      "id": 11,
+      "text": "family",
+      "definition": "bir-biriga qon yoki nikoh orqali bog'liq bo'lgan, odatda ota, ona va ularning farzandlaridan tashkil topgan odamlar"
+    },
+    {
+      "id": 12,
+      "text": "aunt",
+      "definition": "onamiz yoki otamizning singlisi yoki ularning ukasining xotini"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "text": "money",
+      "definition": "biz tovarlar va xizmatlarni sotib olish va sotish uchun foydalanadigan narsa tangalar yoki qog'oz ko'rinishida bo'lishi mumkin"
+    },
+    {
+      "id": 2,
+      "text": "job",
+      "definition": "pul topish uchun muntazam ravishda qiladigan ishimiz"
+    },
+    {
+      "id": 3,
+      "text": "work",
+      "definition": "pul topish uchun muntazam ravishda qiladigan narsamiz"
+    },
+    {
+      "id": 4,
+      "text": "doctor",
+      "definition": "tibbiyotni o'rgangan va kasal yoki jarohatlangan odamlarni davolagan kishi"
+    },
+    {
+      "id": 5,
+      "text": "dentist",
+      "definition": "tishlarimizni tuzatish va parvarish qilish uchun litsenziyaga ega bo'lgan kishi"
+    },
+    {
+      "id": 6,
+      "text": "nurse",
+      "definition": "jarohatlangan yoki kasal odamlarga, ayniqsa kasalxonada parvarish qilishga o'rgatilgan kishi"
+    },
+    {
+      "id": 7,
+      "text": "teacher",
+      "definition": "someone who teaches things to people, particularly in a school"
+    },
+    {
+      "id": 8,
+      "text": "engineer",
+      "definition": "yo'llar, mashinalar, ko'priklar va hokazolarni loyihalash, tuzatuvchi yoki quruvchi shaxs."
+    },
+    {
+      "id": 9,
+      "text": "actor",
+      "definition": "ishi filmlarda, spektakllarda yoki seriallarda ijro etishni o'z ichiga olgan kishi"
+    },
+    {
+      "id": 10,
+      "text": "actress",
+      "definition": "ishi filmlarda, spektakllarda yoki seriallarda ijro etishni o'z ichiga olgan ayol"
+    },
+    {
+      "id": 11,
+      "text": "police officer",
+      "definition": "ishi odamlarni himoya qilish, jinoyatchilarni qo'lga olish va qonunlarga rioya qilinishiga ishonch hosil qilishdir"
+    },
+    {
+      "id": 12,
+      "text": "waiter",
+      "definition": "restoranlarda, kafelarda va hokazolarda odamlarga ovqat va ichimliklar olib keladigan odam."
+    }
+  ],
+  "basicverbs": [
+    {
+      "id": 1,
+      "text": "to be",
+      "definition": "bo'lmoq"
+    },
+    {
+      "id": 2,
+      "text": "to wake up",
+      "definition": "uyg'onmoq"
+    },
+    {
+      "id": 3,
+      "text": "to sleep",
+      "definition": "uxlamoq"
+    },
+    {
+      "id": 4,
+      "text": "to work",
+      "definition": "pul olish uchun odatda kompaniya yoki tashkilot uchun ish yoki vazifani bajarish, ishlamoq"
+    },
+    {
+      "id": 5,
+      "text": "to drive",
+      "definition": "avtomobil, avtobus, yuk mashinasi va boshqalar harakatlanayotganda harakatini va tezligini nazorat qilish, haydamoq"
+    },
+    {
+      "id": 6,
+      "text": "to buy",
+      "definition": "pul to'lash evaziga biror narsa olish, sotib olmoq"
+    },
+    {
+      "id": 7,
+      "text": "to sell",
+      "definition": "birovga pul evaziga biror narsa bermoq, sotmoq"
+    },
+    {
+      "id": 8,
+      "text": "to read",
+      "definition": "o'qimoq"
+    },
+    {
+      "id": 9,
+      "text": "to write",
+      "definition": "yozmoq"
+    },
+    {
+      "id": 10,
+      "text": "to play",
+      "definition": "o'ynamoq"
+    },
+    {
+      "id": 11,
+      "text": "to pay",
+      "definition": "to'lamoq"
+    },
+    {
+      "id": 12,
+      "text": "to rest",
+      "definition": "dam olmoq"
+    }
+  ]
+}

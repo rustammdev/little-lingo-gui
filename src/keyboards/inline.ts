@@ -1,4 +1,8 @@
 import { InlineKeyboard, Keyboard } from "grammy";
+
+
+
+
 export const inlineKeyboardLevel = new InlineKeyboard()
   .text("Foundation A1-pre", "A1-pre")
   .text("Elementary A1", "A1")
@@ -11,7 +15,7 @@ export const inlineKeyboardLevel = new InlineKeyboard()
   .row()
   .text("Proficiency C2", "C2");
 
-// After English rank keyboar 
+// After English rank keyboar
 export const startButton = new InlineKeyboard()
   .text("Darsni boshlash", "dars-start")
   .url("Yo'riqnoma", "https://www.google.com")
@@ -33,9 +37,9 @@ export const games = new InlineKeyboard()
   .text("Review Dictionary", "review-dict")
   .text("Flashcard", "card")
   .row()
-  .text("Quiz", "quiz")
-
+  .text("Quiz", "quiz");
 
 export const reviewInlineKeyboard = new InlineKeyboard()
-  .text('<< Prev', "review-prev")
-  .text('Next >>', "review-next")
+  .text("<< Prev", "review-prev")
+  .text("Next >>", "review-next");
+
