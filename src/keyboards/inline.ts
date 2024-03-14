@@ -40,6 +40,5 @@ export const games = new InlineKeyboard()
   .text("Quiz", "quiz");
 
 export const reviewInlineKeyboard = new InlineKeyboard()
-  .text("<< Prev", "review-prev")
-  .text("Next >>", "review-next");
+  .text("O'yinlar menyusiga qaytish", "back-games")
 

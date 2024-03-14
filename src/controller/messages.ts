@@ -6,15 +6,15 @@ import { startButton } from "../keyboards/inline";
 import { inlineKeyboardLevel } from "../keyboards/inline";
 import { startLessonMenu } from "../keyboards/inline";
 import { games } from "../keyboards/inline";
-import { reviewDictGame } from "./commands";
 
 // keyboard commands
 import { mygames } from "./commands";
 
 // controller
 import { start } from "./commands";
-import { ReviewDictionaryGameContent } from "../games/reviewdict";
+import { aboutReview, modulList } from "../games/reviewdict";
 
+// start
 bot.command("start", start);
 
 // English rank
@@ -61,16 +61,6 @@ bot.callbackQuery("to-games", async (ctx) => {
 // All game list
 bot.command("mygames", mygames);
 
-// Review Dictionary game
-bot.hears("Review Dictionary", reviewDictGame);
-
-bot.callbackQuery("review-dict", async (ctx) => {
-  // inline
-  ctx.answerCallbackQuery();
-  reviewDictGame(ctx);
-});
-
-bot.hears(
-  ["Hello and goodby", "Family", "Jobs", "Basic verbs"],
-  ReviewDictionaryGameContent
-);
+// Review Dictionary menu **
+bot.callbackQuery("review-dict", aboutReview); // menu
+bot.callbackQuery("start-review-about", modulList)

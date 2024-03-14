@@ -2,8 +2,8 @@
   "review": [
     {
       "rank": "a1",
-      "moduls": ["Hello and goodby", "Family", "Jobs", "Basic verbs"]
+      "moduls": ["", "", "", ""]
     },
-    { "rank": "a2", "moduls": ["Home Appliances and Devices"] }
+    { "rank": "a2", "moduls": [] }
   ]
 }
